@@ -163,6 +163,11 @@
                         </select>
                     </div>
             </div>
+
+        <div class="row">
+            <p class="col-sm-4"></p>
+            <p class="text-danger text-center col-sm-4 font-weight-bold" id="message"></p>
+        </div>    
         <div class="row">
             <button type="submit" class="btn btn-primary pt-3 pb-3 col-sm-12 far fa-check-square" id="submit">  Submit</button>
         </div>
@@ -208,7 +213,7 @@ $("#submit").on("click", function(event) {
     return true;
    }
 
-   // Validate the user input before sending it to server
+   // Call validate function to validate the user input before sending it to server
    if (validate()) {
 
    // Setting the data output format
@@ -229,7 +234,9 @@ $("#submit").on("click", function(event) {
        ]
    }
 } else {
-    console.log("Please complete the form");
+    //console.log("Please complete the form");
+    // Message to remind people to complete the form.
+    $("#message").text("Please complete the form!");
 }
    console.log(formData);
 });
