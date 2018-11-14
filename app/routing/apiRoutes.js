@@ -11,7 +11,8 @@ module.exports = function(app) {
       
     // API Post Requests
     app.post("/api/friends", function(req, res) {
-
+        // Checking the post data
+        console.log(req.body);
         // Post data after calculate the best match
     }); 
 };

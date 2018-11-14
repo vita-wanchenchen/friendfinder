@@ -15,18 +15,17 @@
             <hr class="my-4">
             <h3 class="display-5 mt-3">Answer a few basic questions.</h3>
             <h3 class="display-5 mb-4">Then find the friend with the greatest compatibility!</h3>
-            <a class="btn btn-primary btn-lg p-3 fas fa-clipboard-list" href="../public/survey.html" role="button">  Go to Survey</a>
+            <!--Frontend page need to use the route to get to the file by server-->
+            <a class="btn btn-primary btn-lg p-3 fas fa-clipboard-list" href="/survey" role="button">  Go to Survey</a>
         </div>
 
         <footer class="footer">
             <div class="container">
-                <p><a href="/friendfinder/app/routing/apiRoutes.js">API Table Link</a> | <a href="https://github.com/vita-wanchenchen/friendfinder.git">GitHub Repo</a>
+                <!--Added target="_blank" for opening link at new page to improve user experience-->                
+                <p><a href="/api/friends" target="_blank">API Table Link</a> | <a href="https://github.com/vita-wanchenchen/friendfinder.git" target="_blank">GitHub Repo</a>
             </div>
         </footer>
     </div>    
-    <script src="/friendfinder/server.js"></script>
-    <script src="../routing/apiRoutes.js"></script>
-    <script src="../routing/htmlRoutes.js"></script>
-    <script src="../data/friends.js"></script>
+
 </body>
 </html>
