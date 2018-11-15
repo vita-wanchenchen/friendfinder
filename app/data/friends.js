@@ -2,7 +2,7 @@
 var userArray = [
     {
         "name":"Ahmed",
-        "photo":"https://statici.behindthevoiceactors.com/behindthevoiceactors/_img/chars/dave-despicable-me-40.4.jpg",
+        "photo":"https://cdn3-www.comingsoon.net/assets/uploads/2017/11/Yeti.jpg",
         "scores":[
             5,
             1,
